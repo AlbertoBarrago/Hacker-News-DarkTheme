@@ -1,0 +1,70 @@
+/* Main background and text colors */
+body {
+  background-color: #1a1a1b !important;
+  color: #c4c9cc !important;
+}
+
+/* Header styling */
+.header {
+  background-color: #2d2d2d !important;
+}
+
+.pagetop {
+  color: #828282 !important;
+}
+
+.pagetop a {
+  color: #e0e0e0 !important;
+}
+
+/* Story titles */
+.titlelink {
+  color: #e0e0e0 !important;
+}
+
+/* Links */
+a:link {
+  color: #e0e0e0 !important;
+}
+
+a:visited {
+  color: #828282 !important;
+}
+
+/* Story details and points */
+.subtext, .score {
+  color: #828282 !important;
+}
+
+/* Comments */
+.comment {
+  color: #c4c9cc !important;
+}
+
+/* Comment tree lines */
+.comtr td {
+  background-color: #1a1a1b !important;
+}
+
+/* Tables */
+table {
+  background-color: #1a1a1b !important;
+}
+
+/* Alternating table rows */
+tr:nth-child(even) {
+  background-color: #1d1d1e !important;
+}
+
+/* Input fields */
+input {
+  background-color: #2d2d2d !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #404040 !important;
+}
+
+/* Selection color */
+::selection {
+  background-color: #264f78 !important;
+  color: #ffffff !important;
+} 

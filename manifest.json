@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hacker News Dark Style",
+  "author": "Alberto Barrago",
+  "version": "1.0",
+  "description": "A dark theme for Hacker News",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://news.ycombinator.com/*"],
+      "css": ["styles/dark-theme.css"]
+    }
+  ]
+} 
