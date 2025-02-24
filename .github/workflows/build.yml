@@ -1,0 +1,33 @@
+name: Package Theme
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get version from manifest.json
+        id: get_version
+        run: |
+          VERSION=$(jq -r '.version' manifest.json)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          echo "Version is $VERSION"
+
+      - name: Create artifact zip with version in name
+        run: |
+          zip -r hacker-dark-theme.zip manifest.json icons styles image.png LICENSE README.md
+          ls -l hacker-dark-theme.zip
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hacker-dark-theme-${{ steps.get_version.outputs.VERSION }}
+          path: hacker-dark-theme.zip
