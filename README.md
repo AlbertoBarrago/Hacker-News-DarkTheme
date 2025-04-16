@@ -14,7 +14,7 @@ A Chrome extension that provides a comfortable dark theme for Hacker News (news.
 4. Click "Load unpacked" and select the extension directory
 
 ### Screenshots
-![Screenshot 1](image.png)
+![Screenshot 1](preview.png)
 
 ### Contributing
 Feel free to open issues or submit pull requests to improve the theme.

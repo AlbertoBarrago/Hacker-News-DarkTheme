@@ -2,69 +2,94 @@
  * Dark theme styles for improved readability and reduced eye strain
  * Provides dark background colors and appropriate contrast for text elements
  */
+root {
+    --font-size: 16px;
+    --font-little-size: 12px;
+    --spacer-xxl: 40px;
+    --background-color: #1a1a1b;
+    --text-color: #c4c9cc;
+    --link-color: #e0e0e0;
+    --link-visited-color: #828282;
+    --header-background-color: #2d2d2d;
+    --comment-color: #c4c9cc;
+    --subtext-color: #828282;
+    --comment-background-color: #1a1a1b;
+    --table-background-color: #1a1a1b;
+    --table-row-even-background-color: #1d1d1e;
+}
+
 body {
-  background-color: #1a1a1b !important;
-  color: #c4c9cc !important;
-  font-size: 26px !important;
+    background-color: #1a1a1b !important;
+    color: #c4c9cc !important;
 }
 
 .header {
-  background-color: #2d2d2d !important;
+    background-color: #2d2d2d !important;
 }
 
 .pagetop {
-  color: #828282 !important;
+    color: #828282 !important;
 }
 
 .titlelink {
-  color: #e0e0e0 !important;
-  font-size: 18px !important;
+    color: #e0e0e0 !important;
+    font-size: 18px !important;
 }
 
 .comment {
-  color: #c4c9cc !important;
-  font-size: 15px !important;
+    color: #c4c9cc !important;
+    font-size: 15px !important;
 }
 
 .titlelink {
-  color: #e0e0e0 !important;
+    color: #e0e0e0 !important;
 }
 
 a:link {
-  color: #e0e0e0 !important;
+    color: #e0e0e0 !important;
 }
 
 a:visited {
-  color: #828282 !important;
+    color: #828282 !important;
 }
 
 .subtext, .score {
-  color: #828282 !important;
+    color: #828282 !important;
 }
 
 .comment {
-  color: #c4c9cc !important;
+    color: #c4c9cc !important;
 }
 
 .comtr td {
-  background-color: #1a1a1b !important;
+    background-color: #1a1a1b !important;
 }
 
 table {
-  background-color: #1a1a1b !important;
+    background-color: #1a1a1b !important;
 }
 
 tr:nth-child(even) {
-  background-color: #1d1d1e !important;
+    background-color: #1d1d1e !important;
 }
 
 input {
-  background-color: #2d2d2d !important;
-  color: #e0e0e0 !important;
-  border: 1px solid #404040 !important;
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
 }
 
 ::selection {
-  background-color: #264f78 !important;
-  color: #ffffff !important;
+    background-color: #264f78 !important;
+    color: #ffffff !important;
+}
+
+.title {
+    font-size: var(--font-size) !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+
 }
